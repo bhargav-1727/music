@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MUSIC</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="cont">
+            <div class="navi">
+                <img src="images/logo.png">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="songs.html">SONGS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="head">
+                <h1>FRESH <br> MUSIC <br> HERE</h1>
+            </div>
+            <div class="play">
+                <p>CLICK TO PLAY</p>
+                <img src="images/play.png" id="pl">
+            </div>
+        </div>
+        <audio id="songs">
+            <source src="images/[iSongs.info] 06 - Rooba Rooba.mp3" type="audio/mp3">
+            
+        </audio>
+
+    </body>
+    <script>
+        var s=document.getElementById("songs");
+        var i=document.getElementById("pl");
+        i.onclick=function(){
+            if(songs.paused){
+                songs.play();
+                i.src="images/pause.png";
+            }
+            else{
+                songs.pause();
+                i.src="images/play.png";
+            }
+        }
+        </script>
+
+</html>
